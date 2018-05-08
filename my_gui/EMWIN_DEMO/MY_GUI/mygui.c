@@ -51,10 +51,10 @@ WM_HWIN CreateFramewin_2(void);
 #define ID_BUTTON_9 (GUI_ID_USER + 0x13)
 #define ID_BUTTON_10 (GUI_ID_USER + 0x14)
 #define ID_BUTTON_11 (GUI_ID_USER + 0x15)
-#define ID_BUTTON_12 (GUI_ID_USER + 0x16)
-#define ID_BUTTON_13 (GUI_ID_USER + 0x17)
-#define ID_BUTTON_14 (GUI_ID_USER + 0x18)
-#define ID_BUTTON_15 (GUI_ID_USER + 0x19)
+//#define ID_BUTTON_12 (GUI_ID_USER + 0x16)
+//#define ID_BUTTON_13 (GUI_ID_USER + 0x17)
+//#define ID_BUTTON_14 (GUI_ID_USER + 0x18)
+//#define ID_BUTTON_15 (GUI_ID_USER + 0x19)
 
 /***********共用**************/
 #define ID_TEXT_0 (GUI_ID_USER + 0x1B)
@@ -78,10 +78,10 @@ WM_HWIN CreateFramewin_2(void);
 #define ID_CHECKBOX_9 (GUI_ID_USER + 0x32)
 #define ID_CHECKBOX_10 (GUI_ID_USER + 0x33)
 #define ID_CHECKBOX_11 (GUI_ID_USER + 0x34)
-#define ID_CHECKBOX_12 (GUI_ID_USER + 0x35)
-#define ID_CHECKBOX_13 (GUI_ID_USER + 0x36)
-#define ID_CHECKBOX_14 (GUI_ID_USER + 0x37)
-#define ID_CHECKBOX_15 (GUI_ID_USER + 0x38)
+//#define ID_CHECKBOX_12 (GUI_ID_USER + 0x35)
+//#define ID_CHECKBOX_13 (GUI_ID_USER + 0x36)
+//#define ID_CHECKBOX_14 (GUI_ID_USER + 0x37)
+//#define ID_CHECKBOX_15 (GUI_ID_USER + 0x38)
 #define ID_DROPDOWN_0 (GUI_ID_USER + 0x39)
 #define ID_BUTTON_del (GUI_ID_USER + 0x40)
 #define ID_BUTTON_save (GUI_ID_USER + 0x41)
@@ -92,25 +92,25 @@ WM_HWIN CreateFramewin_2(void);
 //智能配置对话框
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate_2[] = {
   { FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0,  0, 0, 800, 480, 0, 0x64, 0   }, //MY_HOME方框
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_0,  150, 70, 100, 35, 0, 0x0, 0  },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_1,  300, 70, 100, 35, 0, 0x0, 0  },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_2,  450, 70, 130, 35, 0, 0x0, 0  },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_3,  600, 70, 100, 35, 0, 0x0, 0  },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_4,  150, 140, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_5,  300, 140, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_6,  450, 140, 130, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_7,  600, 140, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_8,  150, 210, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_9,  300, 210, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_10, 450, 210, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_11, 600, 210, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_12, 150, 280, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_13, 300, 280, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_14, 450, 280, 100, 35, 0, 0x0, 0 },
-  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_15, 600, 280, 100, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_0,  200, 70, 100, 35, 0, 0x0, 0  },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_1,  400, 70, 100, 35, 0, 0x0, 0  },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_2,  600, 70, 135, 35, 0, 0x0, 0  },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_3,  200, 140, 100, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_4,  400, 140, 100, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_5,  600, 140, 135, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_6,  200, 210, 100, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_7,  400, 210, 135, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_8,  600, 210, 100, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_9,  200, 280, 100, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_10, 400, 280, 135, 35, 0, 0x0, 0 },
+  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_11, 600, 280, 100, 35, 0, 0x0, 0 },
+//  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_12, 150, 280, 100, 35, 0, 0x0, 0 },
+//  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_13, 300, 280, 100, 35, 0, 0x0, 0 },
+//  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_14, 450, 280, 100, 35, 0, 0x0, 0 },
+//  { CHECKBOX_CreateIndirect, "Checkbox", ID_CHECKBOX_15, 600, 280, 100, 35, 0, 0x0, 0 },
   { TEXT_CreateIndirect,     "Text",     ID_TEXT_0,      30, 75, 98, 20, 0, 0x64, 0   },
   { TEXT_CreateIndirect,     "Text",     ID_TEXT_1,      30, 145, 104, 20, 0, 0x64, 0 },//文本
-  { TEXT_CreateIndirect,     "Text",     ID_TEXT_2,      30, 215, 80, 20, 0, 0x64, 0  },
+  { TEXT_CreateIndirect,     "Text",     ID_TEXT_2,      30, 215, 104, 20, 0, 0x64, 0  },
   { TEXT_CreateIndirect,     "Text",     ID_TEXT_3,      30, 285, 80, 20, 0, 0x64, 0  },
   { BUTTON_CreateIndirect,   "Button",   ID_BUTTON_16,   5, 5, 122, 40, 0, 0x0, 0     },//按键
   { BUTTON_CreateIndirect,   "Button",   ID_BUTTON_17,   150, 5, 120, 40, 0, 0x0, 0   },
@@ -125,25 +125,25 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate_2[] = {
 //家居控制对话框
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate_1[] = {
   { FRAMEWIN_CreateIndirect, "Framewin", ID_FRAMEWIN_0, 0, 0, 800, 480, 0, 0x64, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_0, 150, 70, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_1, 300, 70, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_2, 450, 70, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_3, 600, 70, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_4, 150, 140, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_5, 300, 140, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_6, 450, 140, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_7, 600, 140, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_8, 150, 210, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_9, 300, 210, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_10, 450, 210, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_11, 600, 210, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_12, 150, 280, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_13, 300, 280, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_14, 450, 280, 100, 35, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "Button", ID_BUTTON_15, 600, 280, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_0, 200, 70, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_1, 400, 70, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_2, 600, 70, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_3, 200, 140, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_4, 400, 140, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_5, 600, 140, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_6, 200, 210, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_7, 400, 210, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_8, 600, 210, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_9, 200, 280, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_10, 400, 280, 100, 35, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "Button", ID_BUTTON_11, 600, 280, 100, 35, 0, 0x0, 0 },
+//  { BUTTON_CreateIndirect, "Button", ID_BUTTON_12, 150, 280, 100, 35, 0, 0x0, 0 },
+//  { BUTTON_CreateIndirect, "Button", ID_BUTTON_13, 300, 280, 100, 35, 0, 0x0, 0 },
+//  { BUTTON_CreateIndirect, "Button", ID_BUTTON_14, 450, 280, 100, 35, 0, 0x0, 0 },
+//  { BUTTON_CreateIndirect, "Button", ID_BUTTON_15, 600, 280, 100, 35, 0, 0x0, 0 },
   { TEXT_CreateIndirect, "Text", ID_TEXT_0, 30, 75, 98, 20, 0, 0x64, 0 },
   { TEXT_CreateIndirect, "Text", ID_TEXT_1, 30, 145, 104, 20, 0, 0x64, 0 },
-  { TEXT_CreateIndirect, "Text", ID_TEXT_2, 30, 215, 80, 20, 0, 0x64, 0 },
+  { TEXT_CreateIndirect, "Text", ID_TEXT_2, 30, 215, 104, 20, 0, 0x64, 0 },
   { TEXT_CreateIndirect, "Text", ID_TEXT_3, 30, 285, 80, 20, 0, 0x64, 0 },
   { BUTTON_CreateIndirect, "Button", ID_BUTTON_16, 5, 5, 122, 40, 0, 0x0, 0 },
   { BUTTON_CreateIndirect, "Button", ID_BUTTON_17, 150, 5, 120, 40, 0, 0x0, 0 },
@@ -197,105 +197,105 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
 		//
     // Initialization of 'Checkbox'
     //
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_3);
+//    CHECKBOX_SetText(hItem, "others");
+//		CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
+		//
+    // Initialization of 'Checkbox'
+    //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_3);
-    CHECKBOX_SetText(hItem, "others");
+    CHECKBOX_SetText(hItem, "LED");
 		CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_4);
-    CHECKBOX_SetText(hItem, "LED");
-		CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
-		//
-    // Initialization of 'Checkbox'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_5);
     CHECKBOX_SetText(hItem, "FAN");
 	  CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_6);
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_5);
     CHECKBOX_SetText(hItem, "air conditioner");
 		CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_7);
-    CHECKBOX_SetText(hItem, "others");
-    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_7);
+//    CHECKBOX_SetText(hItem, "others");
+//    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_8);
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_6);
     CHECKBOX_SetText(hItem, "LED");
     CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
-	  hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_9);
-    CHECKBOX_SetText(hItem, "FAN");
+	  hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_7);
+    CHECKBOX_SetText(hItem, "TV");
+    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
+		//
+    // Initialization of 'Checkbox'
+    //
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_8);
+    CHECKBOX_SetText(hItem, "air conditioner");
+    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
+		//
+    // Initialization of 'Checkbox'
+    //
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_11);
+//    CHECKBOX_SetText(hItem, "others");
+//    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
+		//
+    // Initialization of 'Checkbox'
+    //
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_9);
+    CHECKBOX_SetText(hItem, "LED");
     CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_10);
-    CHECKBOX_SetText(hItem, "Cooker");
+    CHECKBOX_SetText(hItem, "rang hood");
     CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_11);
-    CHECKBOX_SetText(hItem, "others");
+    CHECKBOX_SetText(hItem, "cooker");
     CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Checkbox'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_12);
-    CHECKBOX_SetText(hItem, "others");
-    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
-		//
-    // Initialization of 'Checkbox'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_13);
-    CHECKBOX_SetText(hItem, "others");
-    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
-		//
-    // Initialization of 'Checkbox'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_14);
-    CHECKBOX_SetText(hItem, "others");
-    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
-		//
-    // Initialization of 'Checkbox'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_15);
-    CHECKBOX_SetText(hItem, "others");
-    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_CHECKBOX_15);
+//    CHECKBOX_SetText(hItem, "others");
+//    CHECKBOX_SetFont(hItem, GUI_FONT_20_1);
 		//
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "book room:");
+    TEXT_SetText(hItem, "bedroom1:");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_1);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "living room:");
+    TEXT_SetText(hItem, "bedroom2:");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_2);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "kitchen:");
+    TEXT_SetText(hItem, "living room:");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_3);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "others:");
+    TEXT_SetText(hItem, "kitchen:");
 	  //
     // Initialization of 'Button'
     //
@@ -327,6 +327,7 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
     //
 	hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
     DROPDOWN_SetFont(hItem, GUI_FONT_32_1);
+	DROPDOWN_SetAutoScroll(hItem,1);
     DROPDOWN_AddString(hItem, "son");
     DROPDOWN_AddString(hItem, "father");
     DROPDOWN_AddString(hItem, "mother");
@@ -649,113 +650,113 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
         break;
 		}	  
 		break;
-		case ID_CHECKBOX_12: // Notifications sent by 'Checkbox'
-      switch(NCode) {
-	  case WM_NOTIFICATION_CLICKED:
-        break;
-      case WM_NOTIFICATION_RELEASED:flag_12++;if(flag_12==2&&mode_son==1){
-												set_son_Buffer[12]=0;flag_12=0;
-											  }
-											  if(flag_12==1&&mode_son==1)
-												  set_son_Buffer[12]=1;
-											  if(flag_12==2&&mode_father==1){
-											  set_father_Buffer[12]=0;flag_12=0;
-											  }
-											  if(flag_12==1&&mode_father==1)
-												  set_father_Buffer[12]=1;
-											  if(flag_12==2&&mode_mother==1){
-												set_mother_Buffer[12]=0;flag_12=0;
-											  }
-											  if(flag_12==1&&mode_mother==1)
-												  set_mother_Buffer[12]=1;
+//		case ID_CHECKBOX_12: // Notifications sent by 'Checkbox'
+//      switch(NCode) {
+//	  case WM_NOTIFICATION_CLICKED:
+//        break;
+//      case WM_NOTIFICATION_RELEASED:flag_12++;if(flag_12==2&&mode_son==1){
+//												set_son_Buffer[12]=0;flag_12=0;
+//											  }
+//											  if(flag_12==1&&mode_son==1)
+//												  set_son_Buffer[12]=1;
+//											  if(flag_12==2&&mode_father==1){
+//											  set_father_Buffer[12]=0;flag_12=0;
+//											  }
+//											  if(flag_12==1&&mode_father==1)
+//												  set_father_Buffer[12]=1;
+//											  if(flag_12==2&&mode_mother==1){
+//												set_mother_Buffer[12]=0;flag_12=0;
+//											  }
+//											  if(flag_12==1&&mode_mother==1)
+//												  set_mother_Buffer[12]=1;
 
-        break;
-      case WM_NOTIFICATION_VALUE_CHANGED:
+//        break;
+//      case WM_NOTIFICATION_VALUE_CHANGED:
 
-        break;
-		}	  
-		break;
-		case ID_CHECKBOX_13: // Notifications sent by 'Checkbox'
-      switch(NCode) {
-      case WM_NOTIFICATION_CLICKED:
+//        break;
+//		}	  
+//		break;
+//		case ID_CHECKBOX_13: // Notifications sent by 'Checkbox'
+//      switch(NCode) {
+//      case WM_NOTIFICATION_CLICKED:
 
-        break;
-      case WM_NOTIFICATION_RELEASED:flag_13++;if(flag_13==2&&mode_son==1){
-												set_son_Buffer[13]=0;flag_13=0;
-											  }
-											  if(flag_13==1&&mode_son==1)
-												  set_son_Buffer[13]=1;
-											  if(flag_13==2&&mode_father==1){
-												set_father_Buffer[13]=0;flag_13=0;
-											  }
-											  if(flag_13==1&&mode_father==1)
-												  set_father_Buffer[13]=1;
-											  if(flag_13==2&&mode_mother==1){
-												set_mother_Buffer[13]=0;flag_13=0;
-											  }
-											  if(flag_13==1&&mode_mother==1)
-												  set_mother_Buffer[13]=1;
+//        break;
+//      case WM_NOTIFICATION_RELEASED:flag_13++;if(flag_13==2&&mode_son==1){
+//												set_son_Buffer[13]=0;flag_13=0;
+//											  }
+//											  if(flag_13==1&&mode_son==1)
+//												  set_son_Buffer[13]=1;
+//											  if(flag_13==2&&mode_father==1){
+//												set_father_Buffer[13]=0;flag_13=0;
+//											  }
+//											  if(flag_13==1&&mode_father==1)
+//												  set_father_Buffer[13]=1;
+//											  if(flag_13==2&&mode_mother==1){
+//												set_mother_Buffer[13]=0;flag_13=0;
+//											  }
+//											  if(flag_13==1&&mode_mother==1)
+//												  set_mother_Buffer[13]=1;
 
-        break;
-      case WM_NOTIFICATION_VALUE_CHANGED:
+//        break;
+//      case WM_NOTIFICATION_VALUE_CHANGED:
 
-        break;
-		}	  
-		break;
-		case ID_CHECKBOX_14: // Notifications sent by 'Checkbox'
-      switch(NCode) {
-      case WM_NOTIFICATION_CLICKED:
- 
-        break;
-      case WM_NOTIFICATION_RELEASED:flag_14++;if(flag_14==2&&mode_son==1){
-												set_son_Buffer[14]=0;flag_14=0;
-											  }
-											  if(flag_14==1&&mode_son==1)
-												  set_son_Buffer[14]=1;
-											  if(flag_14==2&&mode_father==1){
-												set_father_Buffer[14]=0;flag_14=0;
-											  }
-											  if(flag_14==1&&mode_father==1)
-												  set_father_Buffer[14]=1;
-											  if(flag_14==2&&mode_mother==1){
-												set_mother_Buffer[14]=0;flag_14=0;
-											  }
-											  if(flag_14==1&&mode_mother==1)
-												  set_mother_Buffer[14]=1;
+//        break;
+//		}	  
+//		break;
+//		case ID_CHECKBOX_14: // Notifications sent by 'Checkbox'
+//      switch(NCode) {
+//      case WM_NOTIFICATION_CLICKED:
+// 
+//        break;
+//      case WM_NOTIFICATION_RELEASED:flag_14++;if(flag_14==2&&mode_son==1){
+//												set_son_Buffer[14]=0;flag_14=0;
+//											  }
+//											  if(flag_14==1&&mode_son==1)
+//												  set_son_Buffer[14]=1;
+//											  if(flag_14==2&&mode_father==1){
+//												set_father_Buffer[14]=0;flag_14=0;
+//											  }
+//											  if(flag_14==1&&mode_father==1)
+//												  set_father_Buffer[14]=1;
+//											  if(flag_14==2&&mode_mother==1){
+//												set_mother_Buffer[14]=0;flag_14=0;
+//											  }
+//											  if(flag_14==1&&mode_mother==1)
+//												  set_mother_Buffer[14]=1;
 
-        break;
-      case WM_NOTIFICATION_VALUE_CHANGED:
+//        break;
+//      case WM_NOTIFICATION_VALUE_CHANGED:
 
-        break;
-		}	  
-		break;
-		case ID_CHECKBOX_15: // Notifications sent by 'Checkbox'
-      switch(NCode) {
-      case WM_NOTIFICATION_CLICKED:
+//        break;
+//		}	  
+//		break;
+//		case ID_CHECKBOX_15: // Notifications sent by 'Checkbox'
+//      switch(NCode) {
+//      case WM_NOTIFICATION_CLICKED:
 
-        break;
-      case WM_NOTIFICATION_RELEASED:flag_15++;if(flag_15==2&&mode_son==1){
-												set_son_Buffer[15]=0;flag_15=0;
-											  }
-											  if(flag_15==1&&mode_son==1)
-												  set_son_Buffer[15]=1;
-											  if(flag_15==2&&mode_father==1){
-												set_father_Buffer[15]=0;flag_15=0;
-											  }
-											  if(flag_15==1&&mode_father==1)
-												  set_father_Buffer[15]=1;
-											  if(flag_15==2&&mode_mother==1){
-												set_mother_Buffer[15]=0;flag_15=0;
-											  }
-											  if(flag_15==1&&mode_mother==1)
-												  set_mother_Buffer[15]=1;
+//        break;
+//      case WM_NOTIFICATION_RELEASED:flag_15++;if(flag_15==2&&mode_son==1){
+//												set_son_Buffer[15]=0;flag_15=0;
+//											  }
+//											  if(flag_15==1&&mode_son==1)
+//												  set_son_Buffer[15]=1;
+//											  if(flag_15==2&&mode_father==1){
+//												set_father_Buffer[15]=0;flag_15=0;
+//											  }
+//											  if(flag_15==1&&mode_father==1)
+//												  set_father_Buffer[15]=1;
+//											  if(flag_15==2&&mode_mother==1){
+//												set_mother_Buffer[15]=0;flag_15=0;
+//											  }
+//											  if(flag_15==1&&mode_mother==1)
+//												  set_mother_Buffer[15]=1;
 
-        break;
-      case WM_NOTIFICATION_VALUE_CHANGED:
+//        break;
+//      case WM_NOTIFICATION_VALUE_CHANGED:
 
-        break;
-		}	  
-		break;
+//        break;
+//		}	  
+//		break;
 		case ID_BUTTON_16: // Notifications sent by 'Button'
       switch(NCode) {
       case WM_NOTIFICATION_CLICKED:
@@ -782,8 +783,7 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
 										 
 									 }
 									 
-									 flag_0=0;flag_1=0;flag_2=0;flag_3=0;flag_4=0;flag_5=0;flag_6=0;flag_7=0;flag_8=0;
-									 flag_9=0;flag_10=0;flag_11=0;flag_12=0;flag_13=0;flag_14=0;flag_15=0;
+									 reset_flag();
 									
 /***********************************************************************************************************************************/
 									
@@ -812,9 +812,7 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
 									if(mode_son==0&&mode_father==0&&mode_mother==1)
 									 STMFLASH_Write(FLASH_MOTHER_SAVE_ADDR,(u32*)set_mother_Buffer,size_mother);
 /***********************************************************************************************************************************/
-//									 printf("write ok!");
-//									 GUI_EndDialog(pMsg->hWin, 0);
-//									 CreateFramewin_2();
+
         break;
 
       }
@@ -823,7 +821,7 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
       switch(NCode) {
       case WM_NOTIFICATION_CLICKED:
         // USER START (Optionally insert code for reacting on notification message)
-        // USER END
+        // USER END									
         break;
       case WM_NOTIFICATION_RELEASED:
         // USER START (Optionally insert code for reacting on notification message)
@@ -832,65 +830,37 @@ static void _cbDialog_2(WM_MESSAGE * pMsg) {
       case WM_NOTIFICATION_SEL_CHANGED:
 //				    switch(DROPDOWN_GetListbox()){
 //						
-//						}		
-									l++;
+//						}																			 
+									hItem = WM_GetDialogItem(pMsg->hWin, ID_DROPDOWN_0);
+									l=DROPDOWN_GetSelExp(hItem);
 									if(l==0)
 									{
+//										printf("son");
 										mode_son=1;mode_father=0;mode_mother=0;
 									}
 									if(l==1)
 									{	
+//										printf("father");
 										mode_son=0;mode_father=1;mode_mother=0;
-										flag_0=0;flag_1=0;flag_2=0;flag_3=0;flag_4=0;flag_5=0;flag_6=0;flag_7=0;
-										flag_8=0;flag_9=0;flag_10=0;flag_11=0;flag_12=0;flag_13=0;flag_14=0;flag_15=0;
+										reset_flag();
 									}
 									if(l==2)
 									{	
+//										printf("mother");
 										mode_son=0;mode_father=0;mode_mother=1;
-										flag_0=0;flag_1=0;flag_2=0;flag_3=0;flag_4=0;flag_5=0;flag_6=0;flag_7=0;
-									    flag_8=0;flag_9=0;flag_10=0;flag_11=0;flag_12=0;flag_13=0;flag_14=0;flag_15=0;
+										reset_flag();
 									}
-									if(l==3)
-									{	
-										l=0;
-										mode_son=1;mode_father=0;mode_mother=0;
-										flag_0=0;flag_1=0;flag_2=0;flag_3=0;flag_4=0;flag_5=0;flag_6=0;flag_7=0;flag_8=0;
-										flag_9=0;flag_10=0;flag_11=0;flag_12=0;flag_13=0;flag_14=0;flag_15=0;
-									}
-									 GUI_EndDialog(pMsg->hWin, 0);
-									 CreateFramewin_2();
-									
         break;
       }
 	  break;
 	  
 	  case ID_BUTTON_read: // Notifications sent by 'Button'
       switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
-//					                printf("son:\r\n");
-									STMFLASH_Read(FLASH_SON_SAVE_ADDR,(u32*)datatemp_son,size_son);
-//									for(i=0;i<16;i++)
-//									{
-//									printf("%d",datatemp_son[i]);
-//									}		
-//									printf("\r\n");
-//									printf("father:\r\n");
-									STMFLASH_Read(FLASH_FATHER_SAVE_ADDR,(u32*)datatemp_father,size_father);
-//									for(i=0;i<16;i++)
-//									{
-//									printf("%d",datatemp_father[i]);
-//									}		
-//		  							printf("\r\n");
-//									printf("mother:\r\n");
-									STMFLASH_Read(FLASH_MOTHER_SAVE_ADDR,(u32*)datatemp_mother,size_mother);
-//									for(i=0;i<16;i++)
-//									{
-//									printf("%d",datatemp_mother[i]);
-//									}	
-									read_config();
+		  case WM_NOTIFICATION_CLICKED:	
+									
 			break;
 		  case WM_NOTIFICATION_RELEASED:
-
+								read_config();
 			break;
       }
       break;
@@ -941,27 +911,39 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
     //
     // Initialization of 'Button'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_3);
-    BUTTON_SetText(hItem, "others");
-    BUTTON_SetFont(hItem, GUI_FONT_16_1);
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_3);
+//    BUTTON_SetText(hItem, "others");
+//    BUTTON_SetFont(hItem, GUI_FONT_16_1);
     //
     // Initialization of 'Button'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_4);
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_3);
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
     BUTTON_SetText(hItem, "LED");
     //
     // Initialization of 'Button'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_5);
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_4);
     BUTTON_SetText(hItem, "FAN");
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
     //
     // Initialization of 'Button'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_6);
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_5);
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
     BUTTON_SetText(hItem, "air conditioner");
+    //
+    // Initialization of 'Button'
+    //
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_7);
+//    BUTTON_SetFont(hItem, GUI_FONT_16_1);
+//    BUTTON_SetText(hItem, "others");
+    //
+    // Initialization of 'Button'
+    //
+    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_6);
+    BUTTON_SetFont(hItem, GUI_FONT_16_1);
+    BUTTON_SetText(hItem, "LED");
     //
     // Initialization of 'Button'
     //
@@ -973,69 +955,61 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_8);
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    BUTTON_SetText(hItem, "LED");
+    BUTTON_SetText(hItem, "air conditioner");
+    //
+    // Initialization of 'Button'
+    //
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_11);
+//    BUTTON_SetFont(hItem, GUI_FONT_16_1);
+//    BUTTON_SetText(hItem, "others");
     //
     // Initialization of 'Button'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_9);
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    BUTTON_SetText(hItem, "FAN");
+	BUTTON_SetText(hItem, "LED");
     //
     // Initialization of 'Button'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_10);
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    BUTTON_SetText(hItem, "Cooker");
+	BUTTON_SetText(hItem, "cooker");
     //
     // Initialization of 'Button'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_11);
     BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    BUTTON_SetText(hItem, "others");
+	BUTTON_SetText(hItem, "range hood");
     //
     // Initialization of 'Button'
     //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_12);
-    BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    //
-    // Initialization of 'Button'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_13);
-    BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    //
-    // Initialization of 'Button'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_14);
-    BUTTON_SetFont(hItem, GUI_FONT_16_1);
-    //
-    // Initialization of 'Button'
-    //
-    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_15);
-    BUTTON_SetFont(hItem, GUI_FONT_16_1);
+//    hItem = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_15);
+//    BUTTON_SetFont(hItem, GUI_FONT_16_1);
+//	BUTTON_SetText(hItem, "others");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "book room:");
+    TEXT_SetText(hItem, "bedroom1:");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_1);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "living room:");
+    TEXT_SetText(hItem, "bedroom2:");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_2);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "kitchen:");
+    TEXT_SetText(hItem, "living room:");
     //
     // Initialization of 'Text'
     //
     hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_3);
     TEXT_SetFont(hItem, GUI_FONT_20_1);
-    TEXT_SetText(hItem, "others:");
+    TEXT_SetText(hItem, "kitchen:");
 	  //
     // Initialization of 'Button'
     //
@@ -1086,18 +1060,8 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
 
       }
       break;
+
     case ID_BUTTON_3: // Notifications sent by 'Button'
-      switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
-					OTHER1=!OTHER1;
-			break;
-		  case WM_NOTIFICATION_RELEASED:
-
-			break;
-
-      }
-      break;
-    case ID_BUTTON_4: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
 					LED1=!LED1;
@@ -1109,7 +1073,7 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
 
       }
       break;
-    case ID_BUTTON_5: // Notifications sent by 'Button'
+    case ID_BUTTON_4: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
 					FAN1=!FAN1;
@@ -1120,7 +1084,7 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
 
       }
       break;
-    case ID_BUTTON_6: // Notifications sent by 'Button'
+    case ID_BUTTON_5: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
 					AIR_C1=!AIR_C1;
@@ -1131,18 +1095,8 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
 
       }
       break;
-    case ID_BUTTON_7: // Notifications sent by 'Button'
-      switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
-					TV=!TV;
-			break;
-		  case WM_NOTIFICATION_RELEASED:
 
-			break;
-
-      }
-      break;
-    case ID_BUTTON_8: // Notifications sent by 'Button'
+    case ID_BUTTON_6: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
 					LED2=!LED2;
@@ -1153,10 +1107,33 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
 
       }
       break;
+    case ID_BUTTON_7: // Notifications sent by 'Button'
+      switch(NCode) {
+		  case WM_NOTIFICATION_CLICKED:
+					TV =!TV;
+			break;
+		  case WM_NOTIFICATION_RELEASED:
+
+			break;
+
+      }
+      break;
+    case ID_BUTTON_8: // Notifications sent by 'Button'
+      switch(NCode) {
+		  case WM_NOTIFICATION_CLICKED:
+					AIR_C2=!AIR_C2;
+			break;
+		  case WM_NOTIFICATION_RELEASED:
+
+			break;
+
+      }
+      break;
+
     case ID_BUTTON_9: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
-					FAN2=!FAN2;
+				LED3=!LED3;
 			break;
 		  case WM_NOTIFICATION_RELEASED:
 
@@ -1178,7 +1155,7 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
     case ID_BUTTON_11: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
-					OTHER2=!OTHER2;
+					RANG_HOOD=!RANG_HOOD;
 			break;
 		  case WM_NOTIFICATION_RELEASED:
 
@@ -1186,55 +1163,23 @@ static void _cbDialog_1(WM_MESSAGE * pMsg) {
 
       }
       break;
-    case ID_BUTTON_12: // Notifications sent by 'Button'
-      switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
+//    case ID_BUTTON_15: // Notifications sent by 'Button'
+//      switch(NCode) {
+//		  case WM_NOTIFICATION_CLICKED:
 
-			break;
-		  case WM_NOTIFICATION_RELEASED:
+//			break;
+//		  case WM_NOTIFICATION_RELEASED:
 
-			break;
+//			break;
 
-      }
-      break;
-    case ID_BUTTON_13: // Notifications sent by 'Button'
-      switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
-
-			break;
-		  case WM_NOTIFICATION_RELEASED:
-
-			break;
-
-      }
-      break;
-    case ID_BUTTON_14: // Notifications sent by 'Button'
-      switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
-
-			break;
-		  case WM_NOTIFICATION_RELEASED:
-
-			break;
-
-      }
-      break;
-    case ID_BUTTON_15: // Notifications sent by 'Button'
-      switch(NCode) {
-		  case WM_NOTIFICATION_CLICKED:
-
-			break;
-		  case WM_NOTIFICATION_RELEASED:
-
-			break;
-
-      }
-      break;
+//      }
+//      break;
     case ID_BUTTON_17: // Notifications sent by 'Button'
       switch(NCode) {
 		  case WM_NOTIFICATION_CLICKED:
 				   GUI_EndDialog(pMsg->hWin, 0);
 				   CreateFramewin_2();
+				   reset_flag();
 			break;
 		  case WM_NOTIFICATION_RELEASED:
 
@@ -1280,26 +1225,27 @@ void my_gui_create(void)
 //LISTBOX_Handle DROPDOWN_GetListbox();
 
 void read_config(void)
-{
-	son_flag=1;
-	if(son_flag==1)
+{	
+	LED_Init();   			//LED初始化
+	if(mode_son==1)
 	{
-//	STMFLASH_Read(FLASH_SON_SAVE_ADDR,(u32*)datatemp_son,size_son);
+		STMFLASH_Read(FLASH_SON_SAVE_ADDR,(u32*)datatemp_son,size_son);
+		printf("1\r\n");
 		for(i=0;i<16;i++){
 		if(datatemp_son[i]==1){
 		switch (i){
 			case 0: LED0=!LED0;break;
 			case 1: FAN0=!FAN0;break;
 			case 2: AIR_C0=!AIR_C0;break;
-			case 3: OTHER1=!OTHER1;break;
-			case 4: LED1=!LED1;break;
-			case 5: FAN1=!FAN1;break;
-			case 6: AIR_C1=!AIR_C1;break;
+			case 3: LED1=!LED1;break;
+			case 4: FAN1=!FAN1;break;
+			case 5: AIR_C1=!AIR_C1;break;
+			case 6: LED2=!LED2;break;
 			case 7: TV=!TV;break;
-			case 8: LED2=!LED2;break;
-			case 9: FAN2=!FAN2;break;
+			case 8: AIR_C2=!AIR_C2;break;
+			case 9: LED3=!LED3;break;
 			case 10:COOKER=!COOKER; break;
-			case 11:OTHER2=!OTHER2; break;
+			case 11:RANG_HOOD=!RANG_HOOD; break;
 			case 12: break;
 			case 13: break;
 			case 14: break;
@@ -1309,24 +1255,25 @@ void read_config(void)
 		}
 		
 	}
-	if(father_flag==1)
+	if(mode_father==1)
 	{
-//	STMFLASH_Read(FLASH_FATHER_SAVE_ADDR,(u32*)datatemp_father,size_father);
+		STMFLASH_Read(FLASH_FATHER_SAVE_ADDR,(u32*)datatemp_father,size_father);
+		printf("2\r\n");
 		for(i=0;i<16;i++){
 		if(datatemp_father[i]==1){
 		switch (i){
 			case 0: LED0=!LED0;break;
 			case 1: FAN0=!FAN0;break;
 			case 2: AIR_C0=!AIR_C0;break;
-			case 3: OTHER1=!OTHER1;break;
-			case 4: LED1=!LED1;break;
-			case 5: FAN1=!FAN1;break;
-			case 6: AIR_C1=!AIR_C1;break;
+			case 3: LED1=!LED1;break;
+			case 4: FAN1=!FAN1;break;
+			case 5: AIR_C1=!AIR_C1;break;
+			case 6: LED2=!LED2;break;
 			case 7: TV=!TV;break;
-			case 8: LED2=!LED2;break;
-			case 9: FAN2=!FAN2;break;
+			case 8: AIR_C2=!AIR_C2;break;
+			case 9: LED3=!LED3;break;
 			case 10:COOKER=!COOKER; break;
-			case 11:OTHER2=!OTHER2; break;
+			case 11:RANG_HOOD=!RANG_HOOD; break;
 			case 12: break;
 			case 13: break;
 			case 14: break;
@@ -1335,24 +1282,25 @@ void read_config(void)
 		}
 		}
 	}
-	if(mother_flag==1)
+	if(mode_mother==1)
 	{
-//	STMFLASH_Read(FLASH_MOTHER_SAVE_ADDR,(u32*)datatemp_mother,size_mother);
+		STMFLASH_Read(FLASH_MOTHER_SAVE_ADDR,(u32*)datatemp_mother,size_mother);
+		printf("3\r\n");
 		for(i=0;i<16;i++){
 		if(datatemp_mother[i]==1){
 		switch (i){
 			case 0: LED0=!LED0;break;
 			case 1: FAN0=!FAN0;break;
 			case 2: AIR_C0=!AIR_C0;break;
-			case 3: OTHER1=!OTHER1;break;
-			case 4: LED1=!LED1;break;
-			case 5: FAN1=!FAN1;break;
-			case 6: AIR_C1=!AIR_C1;break;
+			case 3: LED1=!LED1;break;
+			case 4: FAN1=!FAN1;break;
+			case 5: AIR_C1=!AIR_C1;break;
+			case 6: LED2=!LED2;break;
 			case 7: TV=!TV;break;
-			case 8: LED2=!LED2;break;
-			case 9: FAN2=!FAN2;break;
+			case 8: AIR_C2=!AIR_C2;break;
+			case 9: LED3=!LED3;break;
 			case 10:COOKER=!COOKER; break;
-			case 11:OTHER2=!OTHER2; break;
+			case 11:RANG_HOOD=!RANG_HOOD; break;
 			case 12: break;
 			case 13: break;
 			case 14: break;
@@ -1365,4 +1313,116 @@ void read_config(void)
 
 
 }
+
+void auto_config(void)
+{	
+	LED_Init();   			//LED初始化
+	if(son_flag==1)
+	{
+		STMFLASH_Read(FLASH_SON_SAVE_ADDR,(u32*)datatemp_son,size_son);
+		printf("1\r\n");
+		for(i=0;i<16;i++){
+		if(datatemp_son[i]==1){
+		switch (i){
+			case 0: LED0=!LED0;break;
+			case 1: FAN0=!FAN0;break;
+			case 2: AIR_C0=!AIR_C0;break;
+			case 3: LED1=!LED1;break;
+			case 4: FAN1=!FAN1;break;
+			case 5: AIR_C1=!AIR_C1;break;
+			case 6: LED2=!LED2;break;
+			case 7: TV=!TV;break;
+			case 8: AIR_C2=!AIR_C2;break;
+			case 9: LED3=!LED3;break;
+			case 10:COOKER=!COOKER; break;
+			case 11:RANG_HOOD=!RANG_HOOD; break;
+			case 12: break;
+			case 13: break;
+			case 14: break;
+			case 15: break;	
+		}			
+		}
+		}
+		
+	}
+	if(father_flag==1)
+	{
+		STMFLASH_Read(FLASH_FATHER_SAVE_ADDR,(u32*)datatemp_father,size_father);
+		printf("2\r\n");
+		for(i=0;i<16;i++){
+		if(datatemp_father[i]==1){
+		switch (i){
+			case 0: LED0=!LED0;break;
+			case 1: FAN0=!FAN0;break;
+			case 2: AIR_C0=!AIR_C0;break;
+			case 3: LED1=!LED1;break;
+			case 4: FAN1=!FAN1;break;
+			case 5: AIR_C1=!AIR_C1;break;
+			case 6: LED2=!LED2;break;
+			case 7: TV=!TV;break;
+			case 8: AIR_C2=!AIR_C2;break;
+			case 9: LED3=!LED3;break;
+			case 10:COOKER=!COOKER; break;
+			case 11:RANG_HOOD=!RANG_HOOD; break;
+			case 12: break;
+			case 13: break;
+			case 14: break;
+			case 15: break;	
+		}			
+		}
+		}
+	}
+	if(mother_flag==1)
+	{
+		STMFLASH_Read(FLASH_MOTHER_SAVE_ADDR,(u32*)datatemp_mother,size_mother);
+		printf("3\r\n");
+		for(i=0;i<16;i++){
+		if(datatemp_mother[i]==1){
+		switch (i){
+			case 0: LED0=!LED0;break;
+			case 1: FAN0=!FAN0;break;
+			case 2: AIR_C0=!AIR_C0;break;
+			case 3: LED1=!LED1;break;
+			case 4: FAN1=!FAN1;break;
+			case 5: AIR_C1=!AIR_C1;break;
+			case 6: LED2=!LED2;break;
+			case 7: TV=!TV;break;
+			case 8: AIR_C2=!AIR_C2;break;
+			case 9: LED3=!LED3;break;
+			case 10:COOKER=!COOKER; break;
+			case 11:RANG_HOOD=!RANG_HOOD; break;
+			case 12: break;
+			case 13: break;
+			case 14: break;
+			case 15: break;	
+		}			
+		}
+		}
+	}
+
+
+
+}
+
+void reset_flag(void)
+{
+	flag_0=0;
+	flag_1=0;
+	flag_2=0;
+	flag_3=0;
+	flag_4=0;
+	flag_5=0;
+	flag_6=0;
+	flag_7=0;
+	flag_8=0;
+	flag_9=0;
+	flag_10=0;
+	flag_11=0;
+	flag_12=0;
+	flag_13=0;
+	flag_14=0;
+	flag_15=0;
+
+}
+
 

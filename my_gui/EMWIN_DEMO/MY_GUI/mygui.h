@@ -5,6 +5,8 @@
 
 void my_gui_create(void);//´´½¨GUI
 void read_config(void);
+void auto_config(void);
+void reset_flag(void);
 
 
 

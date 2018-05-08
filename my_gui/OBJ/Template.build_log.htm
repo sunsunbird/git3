@@ -21,20 +21,43 @@ Target DLL:      Segger\JL2CM3.dll V2.99.20.0
 Dialog DLL:      TCM.DLL V1.14.9.0
  
 <h2>Project:</h2>
-F:\biyesheji\my_gui\USER\Template.uvprojx
+F:\git\my_gui\USER\Template.uvprojx
 Project File Date:  04/23/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 2 (build 183)', folder: 'D:\keil\ARM\ARMCC\Bin'
 Build target 'Template'
-"..\OBJ\Template.axf" - 0 Error(s), 0 Warning(s).
+compiling mygui.c...
+..\EMWIN_DEMO\MY_GUI\mygui.c(1218): warning:  #550-D: variable "hWin" was set but never used
+  	WM_HWIN hWin;
+..\EMWIN_DEMO\MY_GUI\mygui.c: 1 warning, 0 errors
+compiling main.c...
+main.c(98): warning:  #177-D: variable "i" was declared but never referenced
+  	int i;
+main.c(99): warning:  #177-D: variable "q" was declared but never referenced
+  	char q='\31';
+main.c(256): warning:  #177-D: variable "num" was declared but never referenced
+  	static u16 num=0;
+main.c(257): warning:  #177-D: variable "xvalue" was declared but never referenced
+  	static int xvalue,yvalue;
+main.c(257): warning:  #177-D: variable "yvalue" was declared but never referenced
+  	static int xvalue,yvalue;
+main.c(307): warning:  #177-D: variable "t" was declared but never referenced
+  	u16 t;  
+main.c(308): warning:  #177-D: variable "len" was declared but never referenced
+  	u16 len;
+main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=221300 RO-data=51312 RW-data=3832 ZI-data=1056720  
+FromELF: creating hex file...
+"..\OBJ\Template.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  F:\biyesheji\my_gui\USER\RTE
+  F:\git\my_gui\USER\RTE
   D:\keil\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:07
 </pre>
 </body>
 </html>

@@ -23,6 +23,7 @@
 u8 son_flag=0;
 u8 father_flag=0;
 u8 mother_flag=0;
+u8 sss[1];
 
 
 #define Son 1
@@ -77,6 +78,18 @@ OS_TCB EmwindemoTaskTCB;
 CPU_STK EMWINDEMO_TASK_STK[EMWINDEMO_STK_SIZE];
 //emwindemo_task任务
 void emwindemo_task_1(void *p_arg);
+
+
+//设置任务优先级
+#define DATAMATCH_TASK_PRIO			7
+//任务堆栈大小
+#define DATAMATCH_STK_SIZE			128
+//任务控制块
+OS_TCB DATAMATCH_TaskTCB;
+//任务堆栈
+CPU_STK DATAMATCH_TASK_STK[DATAMATCH_STK_SIZE];
+//emwindemo_task任务
+void datamatch_task(void *p_arg);
 
 
 
@@ -191,7 +204,21 @@ void start_task(void *p_arg)
                  (OS_TICK	  )0,  					
                  (void*       )0,					
                  (OS_OPT      )OS_OPT_TASK_STK_CHK|OS_OPT_TASK_STK_CLR,
-                 (OS_ERR*     )&err);			 
+                 (OS_ERR*     )&err);		
+	//数据接受任务
+	OSTaskCreate((OS_TCB*     )&DATAMATCH_TaskTCB,		
+				 (CPU_CHAR*   )"Datamatch task", 		
+                 (OS_TASK_PTR )datamatch_task, 			
+                 (void*       )0,					
+                 (OS_PRIO	  )DATAMATCH_TASK_PRIO,     
+                 (CPU_STK*    )&DATAMATCH_TASK_STK[0],	
+                 (CPU_STK_SIZE)DATAMATCH_STK_SIZE/10,	
+                 (CPU_STK_SIZE)DATAMATCH_STK_SIZE,		
+                 (OS_MSG_QTY  )0,					
+                 (OS_TICK	  )0,  					
+                 (void*       )0,					
+                 (OS_OPT      )OS_OPT_TASK_STK_CHK|OS_OPT_TASK_STK_CLR,
+                 (OS_ERR*     )&err);				 
 		 
 	OS_TaskSuspend((OS_TCB*)&StartTaskTCB,&err);		//挂起开始任务			 
 	OS_CRITICAL_EXIT();	//退出临界区
@@ -275,5 +302,53 @@ void KEY_task(void *p_arg)
 }
 
 
+void datamatch_task(void *p_arg)
+{
+	u16 t;  
+	u16 len;
+	OS_ERR err;
+	while(1)
+	{
+	if(USART_RX_STA&0x8000)
+	{					   
+		sss[0]=USART_RX_BUF[0];
+			
+	if(sss[0]==49)
+	{
+		son_flag=1;
+		father_flag=0;
+		mother_flag=0;
+		auto_config();
+		
+	}
+	else if(sss[0]==50)
+	{
+		son_flag=0;
+		father_flag=1;
+		mother_flag=0;
+		auto_config();
+	}
+	else if(sss[0]==51)
+	{
+		son_flag=0;
+		father_flag=0;
+		mother_flag=1;
+		auto_config();
+		
+	}
+	else 
+	{
+		son_flag=0;
+		father_flag=0;
+		mother_flag=0;
+	
+	}
+		while(USART_GetFlagStatus(USART1,USART_FLAG_TC)!=SET);//等待发送结束				
+		USART_RX_STA=0;
+		OSTimeDlyHMSM(0,0,0,5,OS_OPT_TIME_PERIODIC,&err);//延时5ms
+	}
+	}
+
+}
 
 

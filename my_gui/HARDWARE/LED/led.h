@@ -18,18 +18,19 @@
 #define LED0 PFout(9)
 #define LED1 PFout(10)
 #define LED2 PFout(6)
+#define LED3 PAout(8)
 
 #define FAN0 PFout(7)
 #define FAN1 PAout(11)
-#define FAN2 PBout(6)
 
+#define AIR_C2 PBout(6)
 #define AIR_C0 PBout(7)
 #define AIR_C1 PAout(4)
-#define COOKER PAout(5)
 
+#define COOKER PAout(5)
 #define TV PAout(6)
-#define OTHER1 PAout(7)
-#define OTHER2 PAout(8)
+#define RANG_HOOD PAout(7)
+
 
 
 
